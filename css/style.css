@@ -1,0 +1,222 @@
+/* Custom Styles for Website Budaya Lokal Desa Kramas */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+:root {
+    --color-earth-dark: #3e2723;
+    --color-earth-brown: #5d4037;
+    --color-earth-gold: #d4af37;
+    --color-earth-cream: #fdfbf7;
+    --color-earth-black: #1a1a1a;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-earth-cream);
+    color: var(--color-earth-black);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-serif {
+    font-family: 'Merriweather', serif;
+}
+
+/* Custom Utilities for Tailwind integration */
+.bg-earth-dark {
+    background-color: var(--color-earth-dark);
+}
+
+.bg-earth-brown {
+    background-color: var(--color-earth-brown);
+}
+
+.bg-earth-gold {
+    background-color: var(--color-earth-gold);
+}
+
+.bg-earth-cream {
+    background-color: var(--color-earth-cream);
+}
+
+.text-earth-dark {
+    color: var(--color-earth-dark);
+}
+
+.text-earth-brown {
+    color: var(--color-earth-brown);
+}
+
+.text-earth-gold {
+    color: var(--color-earth-gold);
+}
+
+.text-earth-cream {
+    color: var(--color-earth-cream);
+}
+
+.border-earth-gold {
+    border-color: var(--color-earth-gold);
+}
+
+/* Hover Effects */
+.hover-gold:hover {
+    color: var(--color-earth-gold);
+}
+
+.btn-gold {
+    background-color: var(--color-earth-gold);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: #b8962e;
+    transform: translateY(-2px);
+}
+
+/* Hero Section Overlay */
+.hero-overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+}
+
+/* Slider Track */
+.slider-track {
+    display: flex;
+    gap: 16px;
+    width: max-content;
+    /* Simulate Framer Motion smooth easing */
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.slider-item {
+    width: 320px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Mobile Fade specific logic */
+@media (max-width: 767px) {
+    .slider-track {
+        display: block;
+        position: relative;
+        height: 350px;
+        width: 100%;
+        transform: none !important;
+        /* override inline style */
+        transition: none !important;
+    }
+
+    .slider-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 500ms ease-in-out !important;
+        pointer-events: none;
+    }
+
+    .slider-item.active-fade {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+/* Modal / Lightbox Override */
+.custom-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+.custom-modal.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content-wrapper {
+    transform: scale(0.8);
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    max-width: 90%;
+    max-height: 90vh;
+}
+
+.custom-modal.active .modal-content-wrapper {
+    transform: scale(1);
+}
+
+.lightbox-content {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+    z-index: 10000;
+}
+
+.close-lightbox:hover {
+    color: var(--color-earth-gold);
+}
+
+.modal-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 3rem;
+    padding: 0 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+    z-index: 10000;
+}
+
+.modal-nav-btn:hover {
+    background: var(--color-earth-gold);
+    color: var(--color-earth-dark);
+}
+
+.modal-nav-btn.left-4 {
+    left: 1rem;
+}
+
+.modal-nav-btn.right-4 {
+    right: 1rem;
+}
+
+/* Image Hover Zoom */
+.img-zoom-container {
+    overflow: hidden;
+}
+
+.img-zoom-container img {
+    transition: transform 0.5s ease;
+}
+
+.img-zoom-container:hover img {
+    transform: scale(1.05);
+}

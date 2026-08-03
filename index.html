@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budaya Lokal Desa Kramas - Beranda</title>
+    <meta name="description" content="Website resmi pelestarian budaya lokal Kelurahan Kramas, Kota Semarang.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Header & Navigation -->
+    <!-- Floating Pill Navigation -->
+    <header class="fixed top-0 w-full z-50 pt-6 px-4">
+        <div class="bg-white rounded-full shadow-lg w-full max-w-3xl mx-auto flex items-center justify-between px-6 py-3">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="https://kramas.semarangkota.go.id/templates/default/images/pemkot.png" alt="Logo Kelurahan Kramas" class="h-10 w-auto">
+            </a>
+            
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex gap-6 items-center">
+                <a href="index.html" class="text-gray-700 hover:text-earth-gold font-medium transition-colors">Beranda</a>
+                <a href="profil.html" class="text-gray-700 hover:text-earth-gold font-medium transition-colors">Profil</a>
+                <a href="budaya.html" class="text-gray-700 hover:text-earth-gold font-medium transition-colors">Budaya</a>
+                <a href="galeri.html" class="text-gray-700 hover:text-earth-gold font-medium transition-colors">Galeri</a>
+                <a href="kontak.html" class="text-gray-700 hover:text-earth-gold font-medium transition-colors">Kontak</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="floating-menu-btn" class="md:hidden text-gray-700 focus:outline-none hover:text-earth-gold transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="floating-mobile-menu" class="fixed inset-0 bg-white z-50 transform -translate-y-full opacity-0 transition-all duration-500 ease-in-out flex flex-col pointer-events-none">
+        <div class="p-6 flex justify-end">
+            <button id="floating-close-btn" class="text-gray-700 focus:outline-none hover:text-earth-gold transition-colors">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+        <nav class="flex flex-col items-center gap-8 mt-12 text-2xl font-serif">
+            <a href="index.html" class="text-gray-800 hover:text-earth-gold transition-colors font-medium">Beranda</a>
+            <a href="profil.html" class="text-gray-800 hover:text-earth-gold transition-colors font-medium">Profil</a>
+            <a href="budaya.html" class="text-gray-800 hover:text-earth-gold transition-colors font-medium">Budaya</a>
+            <a href="galeri.html" class="text-gray-800 hover:text-earth-gold transition-colors font-medium">Galeri</a>
+            <a href="kontak.html" class="text-gray-800 hover:text-earth-gold transition-colors font-medium">Kontak</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative h-[80vh] min-h-[500px] flex items-center justify-center">
+            <div class="absolute inset-0 z-0 overflow-hidden" id="hero-slideshow">
+                <img src="https://ik.imagekit.io/nunuibnu/kuda_lumping/kuda_lumping_1?updatedAt=1785564937559" class="w-full h-full object-cover absolute inset-0 transition-opacity duration-1000 opacity-100 slide-bg">
+                <img src="https://ik.imagekit.io/nunuibnu/wayang_kulit/wayang_10?updatedAt=1785564961309" class="w-full h-full object-cover absolute inset-0 transition-opacity duration-1000 opacity-0 slide-bg">
+                <img src="https://ik.imagekit.io/nunuibnu/wayang_kulit/wayang_4?updatedAt=1785564961243" class="w-full h-full object-cover absolute inset-0 transition-opacity duration-1000 opacity-0 slide-bg">
+                <img src="https://ik.imagekit.io/nunuibnu/wayang_kulit/wayang_9?updatedAt=1785564961285" class="w-full h-full object-cover absolute inset-0 transition-opacity duration-1000 opacity-0 slide-bg">
+                <div class="absolute inset-0 hero-overlay"></div>
+            </div>
+            <div class="relative z-10 text-center px-4 max-w-4xl mx-auto text-white">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 font-serif text-earth-cream">Kesenian Turonggo Mudho & Wayang Kulit</h1>
+                <p class="text-xl md:text-2xl mb-8 font-light text-gray-200">Melestarikan Warisan Budaya Kelurahan Kramas</p>
+                <a href="budaya.html" class="btn-gold px-8 py-3 rounded-full text-lg font-semibold inline-block shadow-lg">Selengkapnya</a>
+            </div>
+        </section>
+
+        <!-- Berita/Agenda Terkini -->
+        <section class="py-16 bg-earth-cream">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-earth-dark font-serif inline-block pb-2 border-b-2 border-earth-gold">Berita & Agenda Terkini</h2>
+                </div>
+                <!-- Dynamic Content Container -->
+                <div id="agenda-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Cards will be injected by main.js -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-earth-black text-gray-400 py-8 text-center border-t-4 border-earth-gold">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2026 Kelurahan Kramas, Kecamatan Tembalang Kota Semarang. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

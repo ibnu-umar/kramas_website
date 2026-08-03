@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Desa - Budaya Lokal Kelurahan Kramas</title>
+    <meta name="description" content="Informasi geografis dan demografis Kelurahan Kramas, Kota Semarang.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="flex flex-col min-h-screen bg-earth-cream">
+
+    <!-- Header & Navigation -->
+    <!-- Floating Pill Navigation -->
+    <header class="fixed top-0 w-full z-50 pt-6 px-4">
+        <div
+            class="bg-white rounded-full shadow-lg w-full max-w-3xl mx-auto flex items-center justify-between px-6 py-3">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="https://kramas.semarangkota.go.id/templates/default/images/pemkot.png"
+                    alt="Logo Kelurahan Kramas" class="h-10 w-auto">
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex gap-6 items-center">
+                <a href="index.html"
+                    class="text-gray-700 hover:text-earth-gold font-medium transition-colors">Beranda</a>
+                <a href="profil.html"
+                    class="text-gray-700 hover:text-earth-gold font-medium transition-colors">Profil</a>
+                <a href="budaya.html"
+                    class="text-gray-700 hover:text-earth-gold font-medium transition-colors">Budaya</a>
+                <a href="galeri.html"
+                    class="text-gray-700 hover:text-earth-gold font-medium transition-colors">Galeri</a>
+                <a href="kontak.html"
+                    class="text-gray-700 hover:text-earth-gold font-medium transition-colors">Kontak</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="floating-menu-btn"
+                class="md:hidden text-gray-700 focus:outline-none hover:text-earth-gold transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="floating-mobile-menu"
+        class="fixed inset-0 bg-white z-50 transform -translate-y-full opacity-0 transition-all duration-500 ease-in-out flex flex-col pointer-events-none">
+        <div class="p-6 flex justify-end">
+            <button id="floating-close-btn"
+                class="text-gray-700 focus:outline-none hover:text-earth-gold transition-colors">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <nav class="flex flex-col items-center gap-8 mt-12 text-2xl font-serif">
+            <a href="index.html" class="text-gray-800 hover:text-earth-gold transition-colors font-medium">Beranda</a>
+            <a href="profil.html" class="text-gray-800 hover:text-earth-gold transition-colors font-medium">Profil</a>
+            <a href="budaya.html" class="text-gray-800 hover:text-earth-gold transition-colors font-medium">Budaya</a>
+            <a href="galeri.html" class="text-gray-800 hover:text-earth-gold transition-colors font-medium">Galeri</a>
+            <a href="kontak.html" class="text-gray-800 hover:text-earth-gold transition-colors font-medium">Kontak</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow pt-32 pb-12">
+        <div class="container mx-auto px-4">
+
+            <div class="text-center mb-12">
+                <h1
+                    class="text-4xl font-bold text-earth-dark font-serif inline-block pb-2 border-b-2 border-earth-gold">
+                    Profil Kelurahan Kramas</h1>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Mengenal lebih dekat kondisi geografis, demografis, dan
+                    lingkungan masyarakat Kelurahan Kramas.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+                <!-- Geografis & Demografis Data -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-earth-brown">
+                    <h2 class="text-2xl font-bold text-earth-dark font-serif mb-6 flex items-center gap-2">
+                        <svg class="w-6 h-6 text-earth-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                            </path>
+                        </svg>
+                        Data Geografis
+                    </h2>
+                    <ul class="space-y-4 mb-8 text-gray-700">
+                        <li class="flex flex-col"><span class="text-sm font-semibold text-earth-brown uppercase">Luas
+                                Wilayah</span> <span id="profil-luas" class="text-lg">-</span></li>
+                        <li class="flex flex-col"><span class="text-sm font-semibold text-earth-brown uppercase">Batas
+                                Wilayah</span> <span id="profil-batas" class="text-lg">-</span></li>
+                        <li class="flex flex-col"><span
+                                class="text-sm font-semibold text-earth-brown uppercase">Ketinggian Rata-rata</span>
+                            <span id="profil-ketinggian" class="text-lg">-</span></li>
+                    </ul>
+
+                    <h2
+                        class="text-2xl font-bold text-earth-dark font-serif mb-6 flex items-center gap-2 pt-6 border-t border-gray-200">
+                        <svg class="w-6 h-6 text-earth-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                            </path>
+                        </svg>
+                        Data Demografi
+                    </h2>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex flex-col"><span class="text-sm font-semibold text-earth-brown uppercase">Jumlah
+                                Penduduk</span> <span id="profil-penduduk" class="text-lg">-</span></li>
+                        <li class="flex flex-col"><span class="text-sm font-semibold text-earth-brown uppercase">Jumlah
+                                RT / RW</span> <span id="profil-rtrw" class="text-lg">-</span></li>
+                        <li class="flex flex-col"><span
+                                class="text-sm font-semibold text-earth-brown uppercase">Mayoritas Pekerjaan</span>
+                            <span id="profil-pekerjaan" class="text-lg">-</span></li>
+                    </ul>
+                </div>
+
+                <!-- Peta Kelurahan -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-earth-brown flex flex-col">
+                    <h2 class="text-2xl font-bold text-earth-dark font-serif mb-6 flex items-center gap-2">
+                        <svg class="w-6 h-6 text-earth-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7">
+                            </path>
+                        </svg>
+                        Peta Desa Kramas
+                    </h2>
+                    <div class="flex-grow rounded-lg overflow-hidden border border-gray-200">
+                        <img id="profil-map" src="" alt="Peta Desa Kramas" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aset Visual Lingkungan -->
+            <div class="mt-8">
+                <h2 class="text-3xl font-bold text-earth-dark font-serif mb-8 text-center">Foto Lingkungan</h2>
+                <div id="profil-lingkungan" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Environment photos will be injected by main.js -->
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-earth-black text-gray-400 py-8 text-center border-t-4 border-earth-gold mt-auto">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2026 Kelurahan Kramas, Kecamatan Tembalang Kota Semarang. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

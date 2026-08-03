@@ -1,0 +1,8 @@
+logo
+https://kramas.semarangkota.go.id/templates/default/images/pemkot.png
+
+foto_lingkungan
+https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_1?updatedAt=1785596794729
+https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_2?updatedAt=1785596794751
+https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_3?updatedAt=1785596794804
+https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_4?updatedAt=1785596794540

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradisi Budaya Lokal - Desa Kramas</title>
+    <meta name="description"
+        content="Informasi tradisi dan kesenian seperti Wayang Kulit dan Kuda Lumping di Kelurahan Kramas.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="flex flex-col min-h-screen bg-earth-cream">
+
+    <!-- Header & Navigation -->
+    <!-- Floating Pill Navigation -->
+    <header class="fixed top-0 w-full z-50 pt-6 px-4">
+        <div
+            class="bg-white rounded-full shadow-lg w-full max-w-3xl mx-auto flex items-center justify-between px-6 py-3">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="https://kramas.semarangkota.go.id/templates/default/images/pemkot.png"
+                    alt="Logo Kelurahan Kramas" class="h-10 w-auto">
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex gap-6 items-center">
+                <a href="index.html"
+                    class="text-gray-700 hover:text-earth-gold font-medium transition-colors">Beranda</a>
+                <a href="profil.html"
+                    class="text-gray-700 hover:text-earth-gold font-medium transition-colors">Profil</a>
+                <a href="budaya.html"
+                    class="text-gray-700 hover:text-earth-gold font-medium transition-colors">Budaya</a>
+                <a href="galeri.html"
+                    class="text-gray-700 hover:text-earth-gold font-medium transition-colors">Galeri</a>
+                <a href="kontak.html"
+                    class="text-gray-700 hover:text-earth-gold font-medium transition-colors">Kontak</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="floating-menu-btn"
+                class="md:hidden text-gray-700 focus:outline-none hover:text-earth-gold transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="floating-mobile-menu"
+        class="fixed inset-0 bg-white z-50 transform -translate-y-full opacity-0 transition-all duration-500 ease-in-out flex flex-col pointer-events-none">
+        <div class="p-6 flex justify-end">
+            <button id="floating-close-btn"
+                class="text-gray-700 focus:outline-none hover:text-earth-gold transition-colors">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <nav class="flex flex-col items-center gap-8 mt-12 text-2xl font-serif">
+            <a href="index.html" class="text-gray-800 hover:text-earth-gold transition-colors font-medium">Beranda</a>
+            <a href="profil.html" class="text-gray-800 hover:text-earth-gold transition-colors font-medium">Profil</a>
+            <a href="budaya.html" class="text-gray-800 hover:text-earth-gold transition-colors font-medium">Budaya</a>
+            <a href="galeri.html" class="text-gray-800 hover:text-earth-gold transition-colors font-medium">Galeri</a>
+            <a href="kontak.html" class="text-gray-800 hover:text-earth-gold transition-colors font-medium">Kontak</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow pt-32 pb-12">
+        <div class="container mx-auto px-4 max-w-5xl">
+
+            <div class="text-center mb-12">
+                <h1
+                    class="text-4xl font-bold text-earth-dark font-serif inline-block pb-2 border-b-2 border-earth-gold">
+                    Tradisi Budaya Lokal</h1>
+            </div>
+
+            <!-- Intro Text -->
+            <div class="bg-white p-8 rounded-lg shadow-md border-l-4 border-earth-gold mb-12">
+                <p class="text-lg md:text-xl text-gray-700 font-light italic leading-relaxed">
+                    "Kesenian adalah jiwa kami. Dari irama Gamelan hingga gerakan lincah Jaran Kepang, Kelurahan Kramas
+                    bangga melestarikan warisan leluhur. Kami mengundang Anda untuk menjelajahi kekayaan seni budaya
+                    lokal yang menjadi bagian tak terpisahkan dari identitas masyarakat kami."
+                </p>
+            </div>
+
+            <!-- Daftar Tradisi -->
+            <div id="tradisi-container">
+                <!-- Tradisi cards will be injected by main.js -->
+            </div>
+
+            <!-- Jadwal Pelaksanaan Section -->
+            <div class="mt-16 bg-white p-8 rounded-lg shadow-lg border-t-4 border-earth-dark">
+                <h2 class="text-2xl font-bold text-earth-dark font-serif mb-6 text-center">Jadwal Pelaksanaan Agenda
+                    Budaya</h2>
+                <ul id="jadwal-container" class="border border-gray-200 rounded-lg">
+                    <!-- Jadwal list will be injected by main.js -->
+                </ul>
+                <div class="mt-8 flex justify-center">
+                    <a href="https://whatsapp.com/channel/0029Vb8Xl3FBadmRV79s9t1N" target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#1ebe57] text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-md">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        </svg>
+                        Saluran WhatsApp
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-earth-black text-gray-400 py-8 text-center border-t-4 border-earth-gold mt-auto">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2026 Kelurahan Kramas, Kecamatan Tembalang Kota Semarang. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
