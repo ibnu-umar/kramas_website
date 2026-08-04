@@ -3,19 +3,19 @@ const siteData = {
         {
             title: "Pertunjukan Wayang Kulit",
             date: "9 Mei 2026",
-            description: "Pementasan semalam suntuk di Balai Kelurahan Kramas.",
+            description: "Wayang Kulit KI Catur Nugroho S.Sn.,M.Sn Lakon Wahyu Kamulyan Sejati Lokasi Halaman Kantor Kelurahan Kramas Sabtu ,09 Mei 2026 Jam 20.00 WIB - Selesai.",
             image: "https://ik.imagekit.io/nunuibnu/thumbnail/wayang/9-5-2026"
         },
         {
-            title: "Pentas Kuda Lumping Turonggo Mudho",
+            title: "Pentas Kuda Lumping Turonggo Mudho dan kirab",
             date: "9 Mei 2026",
-            description: "Kesenian Jaran Kepang dari grup kesenian lokal Kramas.",
+            description: "kirab budaya dilanjutkan Pentas Seni Jaran Kepang Turonggo Mudho Dalam Rangka Sedekah Bumi Kel. Kramas Kec. Tembalang Kota Semarang Sabtu, 9 Mei 2026 Lokasi Halaman Kel. Kramas.",
             image: "https://ik.imagekit.io/nunuibnu/thumbnail/kuda/kuda09mei"
         },
         {
             title: "Ziarah Makam",
             date: "1 Muharam 1446 H",
-            description: "Rangkaian acara syukur dari pengajian hingga kirab.",
+            description: "Dokumentasi Sedekah Bumi Desa Kramas Ziarah Makam Leluhur Mbah Singonyidro.",
             image: "https://ik.imagekit.io/nunuibnu/thumbnail/ziarah_makam/ziarah09"
         },
         {
