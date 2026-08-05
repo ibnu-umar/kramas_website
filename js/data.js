@@ -68,9 +68,9 @@ const siteData = {
     ],
     jadwal_pelaksanaan: [
         { event: "Pengajian Bersih Desa", time: "Jumat Pertama Muharam, 19.30 WIB" },
-        { event: "Ziarah Makam Leluhur", time: "Sabtu Pertama Muharam, 08.00 WIB" },
-        { event: "Kirab Budaya Kramas", time: "Sabtu Pertama Muharam, 13.00 WIB" },
-        { event: "Pentas Kuda Lumping / Wayang Kulit", time: "Sabtu Pertama Muharam, 20.00 WIB" }
+        { event: "Ziarah Makam Leluhur", time: "Sabtu Pertama Muharam, 15.00 WIB" },
+        { event: "Kirab Budaya Kramas dan pentas kuda lumping", time: "Sabtu Pertama Muharam, 10.00 WIB" },
+        { event: "Pentas Wayang Kulit", time: "Sabtu Pertama Muharam, 20.00 WIB" }
     ],
     galeri: [
         { type: "image", category: "Wayang Kulit", url: "https://images.unsplash.com/photo-1616857321528-984bb35d2139?w=800&q=80", thumb: "https://images.unsplash.com/photo-1616857321528-984bb35d2139?w=300&q=80", title: "Pagelaran Wayang Kulit Semalam Suntuk" },
