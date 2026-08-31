@@ -41,10 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 'slider-track-pengajian',
             images: [
-                "https://desagrogol.gunungkidulkab.go.id/assets/files/artikel/sedang_1750374109Bersih%20Desa_Pengajian%20Akbar4.jpg",
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbozPCIVlF4p9FcmWG3qoSVBNDBODFjXZQcaEH89xg1f33g39oKqGmG65r&s=10",
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTalLcSW43khgx39VlUVGzX85t8hD1x5Cmzbi3rdRYAJepy0Edk8yf3EXs&s=10",
-                "https://bangkatengahkab.go.id/asset/foto_berita/pengajian_akbar.jpg"
+                "https://ik.imagekit.io/nunuibnu/pengajian/pengajian_1?updatedAt=1786586749667",
+                "https://ik.imagekit.io/nunuibnu/pengajian/pengajian_2?updatedAt=1786586746832",
+                "https://ik.imagekit.io/nunuibnu/pengajian/pengajian_3?updatedAt=1786586749990",
+                "https://ik.imagekit.io/nunuibnu/pengajian/pengajian_4?updatedAt=1786586746657"
             ]
         }
     ];
@@ -58,20 +58,20 @@ document.addEventListener('DOMContentLoaded', () => {
     let isModalOpen = false;
     let currentModalImages = [];
     let currentModalIndex = 0;
-    
+
     // We need to keep track of intervals for all sliders so we can pause/resume them
     const activeSliders = [];
-    
+
     // Config
-    const itemWidth = 320; 
-    const gap = 16; 
+    const itemWidth = 320;
+    const gap = 16;
     const step = itemWidth + gap;
     const intervalTime = 3000;
 
     galleries.forEach(galleryData => {
         const track = document.getElementById(galleryData.id);
         if (!track) return;
-        
+
         // At least 5 images needed for a smooth scrolling feel. If there are fewer, we duplicate them.
         let sourceImages = [...galleryData.images];
         while (sourceImages.length < 5) {
@@ -90,12 +90,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (index === 0) img.classList.add('active-fade'); // Initialize first item
             img.alt = `Gallery Image ${index}`;
             // Important: map index back to original array length so modal matches the array correctly
-            img.dataset.index = index % sourceImages.length; 
-            
+            img.dataset.index = index % sourceImages.length;
+
             img.addEventListener('click', () => {
                 openModal(parseInt(img.dataset.index), sourceImages);
             });
-            
+
             track.appendChild(img);
         });
 
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const moveToNextSlide = () => {
             currentSlide++;
-            
+
             // For Desktop Sliding
             track.style.transition = 'transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)';
             track.style.transform = `translateX(-${currentSlide * step}px)`;
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     track.style.transition = 'none';
                     currentSlide = 0;
                     track.style.transform = `translateX(0px)`;
-                    
+
                     Array.from(track.children).forEach((child, idx) => {
                         if (idx === currentSlide) {
                             child.classList.add('active-fade');
@@ -155,10 +155,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const openModal = (index, imagesArray) => {
         isModalOpen = true;
         activeSliders.forEach(slider => slider.stop());
-        
+
         currentModalImages = imagesArray;
         currentModalIndex = index;
-        
+
         updateModalImage();
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
