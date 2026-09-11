@@ -220,3 +220,144 @@ h6,
 .img-zoom-container:hover img {
     transform: scale(1.05);
 }
+
+/* ============================
+   Sambutan Ketua LPMK Section
+   ============================ */
+
+/* Decorative background pattern */
+.sambutan-bg-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.04) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(93, 64, 55, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 50% 80%, rgba(212, 175, 55, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+/* Photo wrapper */
+.sambutan-photo-wrapper {
+    width: 280px;
+    min-width: 280px;
+}
+
+.sambutan-photo-frame {
+    position: relative;
+    width: 260px;
+    height: 320px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 
+        0 20px 40px rgba(62, 39, 35, 0.15),
+        0 0 0 4px var(--color-earth-gold),
+        0 0 0 8px rgba(212, 175, 55, 0.2);
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.5s ease;
+}
+
+.sambutan-photo-frame:hover {
+    transform: translateY(-6px);
+    box-shadow: 
+        0 28px 50px rgba(62, 39, 35, 0.2),
+        0 0 0 4px var(--color-earth-gold),
+        0 0 0 8px rgba(212, 175, 55, 0.3);
+}
+
+.sambutan-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.6s ease;
+}
+
+.sambutan-photo-frame:hover .sambutan-photo {
+    transform: scale(1.04);
+}
+
+.sambutan-photo-border {
+    position: absolute;
+    inset: 0;
+    border: 2px solid rgba(212, 175, 55, 0.3);
+    border-radius: 12px;
+    pointer-events: none;
+}
+
+/* Message wrapper */
+.sambutan-message-wrapper {
+    position: relative;
+    background: linear-gradient(135deg, #fdfbf7 0%, #f9f5ed 100%);
+    border-radius: 16px;
+    padding: 2.5rem;
+    border-left: 4px solid var(--color-earth-gold);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.sambutan-quote-icon {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    color: var(--color-earth-gold);
+}
+
+/* Signature */
+.sambutan-signature {
+    padding-top: 1rem;
+}
+
+.sambutan-signature-line {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-earth-gold), rgba(212, 175, 55, 0.3));
+    border-radius: 2px;
+    margin-bottom: 0.75rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1023px) {
+    .sambutan-photo-wrapper {
+        width: 220px;
+        min-width: 220px;
+    }
+
+    .sambutan-photo-frame {
+        width: 200px;
+        height: 260px;
+    }
+
+    .sambutan-message-wrapper {
+        padding: 1.75rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .sambutan-photo-wrapper {
+        width: 200px;
+        min-width: auto;
+    }
+
+    .sambutan-photo-frame {
+        width: 180px;
+        height: 230px;
+    }
+
+    .sambutan-message-wrapper {
+        padding: 1.5rem;
+        border-left: none;
+        border-top: 4px solid var(--color-earth-gold);
+    }
+
+    .sambutan-quote-icon {
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .sambutan-quote-icon svg {
+        width: 32px;
+        height: 32px;
+    }
+}
