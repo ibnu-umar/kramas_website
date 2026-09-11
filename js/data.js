@@ -39,10 +39,10 @@ const siteData = {
         aset_visual: {
             map: "https://kramas.semarangkota.go.id/medias/media/big/8/peta-edit-1.jpg",
             lingkungan: [
-                "https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_1?updatedAt=1785596794729", // Jalan Utama
-                "https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_2?updatedAt=1785596794751", // Pemukiman
-                "https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_3?updatedAt=1785596794804", // Taman Toga
-                "https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_4?updatedAt=1785596794540"  // Balai Kelurahan
+                { url: "https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_1?updatedAt=1785596794729", caption: "Jalan Utama Kelurahan Kramas" },
+                { url: "https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_2?updatedAt=1785596794751", caption: "Pemukiman Warga Kramas" },
+                { url: "https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_3?updatedAt=1785596794804", caption: "Taman Toga Kelurahan" },
+                { url: "https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_4?updatedAt=1785596794540", caption: "Balai Kelurahan Kramas" }
             ]
         }
     },

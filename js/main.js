@@ -106,10 +106,17 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('profil-map').src = siteData.profil.aset_visual.map;
 
             const envContainer = document.getElementById('profil-lingkungan');
-            siteData.profil.aset_visual.lingkungan.forEach(imgUrl => {
+            siteData.profil.aset_visual.lingkungan.forEach(item => {
                 const imgWrap = document.createElement('div');
-                imgWrap.className = 'h-64 rounded-lg overflow-hidden img-zoom-container shadow-md';
-                imgWrap.innerHTML = `<img src="${imgUrl}" alt="Lingkungan Kramas" class="w-full h-full object-cover">`;
+                imgWrap.className = 'rounded-lg overflow-hidden shadow-md group';
+                imgWrap.innerHTML = `
+                    <div class="h-56 img-zoom-container relative">
+                        <img src="${item.url}" alt="${item.caption}" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 pt-8">
+                            <p class="text-white text-sm font-medium">${item.caption}</p>
+                        </div>
+                    </div>
+                `;
                 envContainer.appendChild(imgWrap);
             });
         }
