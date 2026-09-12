@@ -39,10 +39,10 @@ const siteData = {
         aset_visual: {
             map: "https://ik.imagekit.io/nunuibnu/foto_lingkungan/peta2",
             lingkungan: [
-                { url: "https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_1?updatedAt=1785596794729", caption: "Jalan Utama Kelurahan Kramas" },
-                { url: "https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_2?updatedAt=1785596794751", caption: "Pemukiman Warga Kramas" },
-                { url: "https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_3?updatedAt=1785596794804", caption: "Taman Toga Kelurahan" },
-                { url: "https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_4?updatedAt=1785596794540", caption: "Balai Kelurahan Kramas" }
+                { url: "https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_1?updatedAt=1785596794729", caption: "KKN Universitas Islam Negeri Walisongo tahun 2025 " },
+                { url: "https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_2?updatedAt=1785596794751", caption: "Kegiatan sensus penduduk" },
+                { url: "https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_3?updatedAt=1785596794804", caption: "Kegiatan Pemeriksaan kondisi air" },
+                { url: "https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_4?updatedAt=1785596794540", caption: "foto sendang bulung yang masih hidup di kramas" }
             ]
         }
     },
