@@ -37,7 +37,7 @@ const siteData = {
             pekerjaan: "Pekerja Swasta, Wiraswasta, Mahasiswa"
         },
         aset_visual: {
-            map: "https://ik.imagekit.io/nunuibnu/foto_lingkungan/peta1",
+            map: "https://ik.imagekit.io/nunuibnu/foto_lingkungan/peta2",
             lingkungan: [
                 { url: "https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_1?updatedAt=1785596794729", caption: "Jalan Utama Kelurahan Kramas" },
                 { url: "https://ik.imagekit.io/nunuibnu/foto_lingkungan/lingkungan_2?updatedAt=1785596794751", caption: "Pemukiman Warga Kramas" },
