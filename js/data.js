@@ -50,19 +50,19 @@ const siteData = {
         {
             id: "bersih-desa",
             title: "Bersih Desa",
-            description: "Tradisi Bersih Desa adalah wujud rasa syukur masyarakat Kelurahan Kramas atas karunia Tuhan. Diadakan setiap awal bulan Muharam dengan durasi 2 hari. Rangkaian acara meliputi pengajian pada hari Jumat, diikuti ziarah makam leluhur, kirab budaya, dan pagelaran Wayang Kulit atau Kuda Lumping pada hari Sabtu.",
+            description: "Tradisi Bersih Desa 09 mei 2026 adalah wujud rasa syukur masyarakat Kelurahan Kramas atas karunia Tuhan. Diadakan setiap awal bulan Muharam dengan durasi 2 hari. Rangkaian acara meliputi pengajian pada hari Jumat, diikuti ziarah makam leluhur, kirab budaya, dan pagelaran Wayang Kulit atau Kuda Lumping pada hari Sabtu.",
             image: "https://ik.imagekit.io/nunuibnu/budaya_lokal/bersih_desa/warga?updatedAt=1785668456192"
         },
         {
             id: "kuda-lumping",
             title: "Kuda Lumping Turonggo Mudho",
-            description: "Kesenian Kuda Lumping Turonggo Mudho adalah kesenian tari tradisional yang menggambarkan kegagahan prajurit berkuda. Kesenian ini memiliki makna heroisme dan spiritual yang kuat bagi masyarakat Kramas, dan sering dipentaskan dalam berbagai perayaan penting desa.",
+            description: "Kesenian Kuda Lumping Turonggo Mudho 09 mei 2026 adalah kesenian tari tradisional yang menggambarkan kegagahan prajurit berkuda. Kesenian ini memiliki makna heroisme dan spiritual yang kuat bagi masyarakat Kramas, dan sering dipentaskan dalam berbagai perayaan penting desa.",
             image: "https://ik.imagekit.io/nunuibnu/budaya_lokal/kudalumping/turonggo?updatedAt=1785668512597"
         },
         {
             id: "wayang-kulit",
             title: "Wayang Kulit",
-            description: "Wayang Kulit adalah warisan budaya luhur yang tidak hanya menjadi tontonan, tetapi juga tuntunan hidup. Masyarakat Kramas melestarikan Wayang Kulit sebagai media pelestarian nilai-nilai moral dan spiritual leluhur yang dipentaskan pada acara-acara sakral dan perayaan desa.",
+            description: "Wayang Kulit 09 mei 2026 adalah warisan budaya luhur yang tidak hanya menjadi tontonan, tetapi juga tuntunan hidup. Masyarakat Kramas melestarikan Wayang Kulit sebagai media pelestarian nilai-nilai moral dan spiritual leluhur yang dipentaskan pada acara-acara sakral dan perayaan desa.",
             image: "https://ik.imagekit.io/nunuibnu/budaya_lokal/wayangkulit/ki_catur?updatedAt=1785668404439"
         }
     ],
