@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
                                 Tonton Live
                             </a>
-                            <button class="share-btn flex items-center gap-2 text-sm font-semibold text-white bg-earth-gold border border-earth-gold rounded-[8px] px-4 py-2 transition-all hover:bg-[#b8962e] hover:border-[#b8962e] hover:shadow-md hover:-translate-y-0.5">
+                            <button class="share-btn flex items-center gap-2 text-sm font-semibold text-white bg-earth-gold border border-earth-gold rounded-[8px] px-4 py-2 transition-all hover:bg-[#b51b16] hover:border-[#b51b16] hover:shadow-md hover:-translate-y-0.5">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path></svg>
                                 Bagikan
                             </button>
