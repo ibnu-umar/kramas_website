@@ -1,5 +1,5 @@
-﻿logo
-https://kramas.semarangkota.go.id/templates/default/images/pemkot.png
+logo
+asset/img/logo/logo_kelurahan_kramas.png
 
 peta
 asset/img/foto_lingkungan/peta2.jpeg

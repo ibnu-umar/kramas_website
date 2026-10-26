@@ -1,4 +1,4 @@
-﻿thumbnail 
+thumbnail 
 
 wayang 09 Mei 2026
 asset/img/thumbnail/wayang/9-5-2026.png
@@ -11,3 +11,9 @@ asset/img/thumbnail/ziarah_makam/ziarah09.png
 
 ketua_lpmk
 asset/img/ketualpmk/supri.jpeg
+
+background slideshow
+asset/img/background-slideshow/kuda_lumping_1.jpeg
+asset/img/background-slideshow/wayang_10.jpeg
+asset/img/background-slideshow/wayang_4.jpeg
+asset/img/background-slideshow/wayang_9.jpeg

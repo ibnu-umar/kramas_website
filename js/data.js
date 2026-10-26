@@ -19,7 +19,7 @@ const siteData = {
             image: "asset/img/thumbnail/ziarah_makam/ziarah09.png"
         },
         {
-            title: "Ziarah Makam",
+            title: "Pengajian",
             date: "1 Muharam 1446 H",
             description: "Rangkaian acara syukur dari pengajian hingga kirab.",
             image: "asset/img/thumbnail/ziarah_makam/ziarah09.png"
