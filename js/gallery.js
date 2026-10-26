@@ -6,45 +6,45 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 'slider-track-wayang',
             images: [
-                "https://ik.imagekit.io/nunuibnu/wayang_kulit/wayang_1?updatedAt=1785564961251",
-                "https://ik.imagekit.io/nunuibnu/wayang_kulit/wayang_4?updatedAt=1785564961243",
-                "https://ik.imagekit.io/nunuibnu/wayang_kulit/wayang_3?updatedAt=1785564961297",
-                "https://ik.imagekit.io/nunuibnu/wayang_kulit/wayang_5?updatedAt=1785564961261",
-                "https://ik.imagekit.io/nunuibnu/wayang_kulit/wayang_2?updatedAt=1785564961263",
-                "https://ik.imagekit.io/nunuibnu/wayang_kulit/wayang_6?updatedAt=1785564961262",
-                "https://ik.imagekit.io/nunuibnu/wayang_kulit/wayang_7?updatedAt=1785564961326",
-                "https://ik.imagekit.io/nunuibnu/wayang_kulit/wayang_8?updatedAt=1785564961342",
-                "https://ik.imagekit.io/nunuibnu/wayang_kulit/wayang_9?updatedAt=1785564961285",
-                "https://ik.imagekit.io/nunuibnu/wayang_kulit/wayang_10?updatedAt=1785564961309",
-                "https://ik.imagekit.io/nunuibnu/wayang_kulit/wayang_11?updatedAt=1785564961274",
-                "https://ik.imagekit.io/nunuibnu/wayang_kulit/wayang_12?updatedAt=1785564961287"
+                "asset/img/galeri/wayang_kulit/wayang_1.jpeg",
+                "asset/img/galeri/wayang_kulit/wayang_4.jpeg",
+                "asset/img/galeri/wayang_kulit/wayang_3.jpeg",
+                "asset/img/galeri/wayang_kulit/wayang_5.jpeg",
+                "asset/img/galeri/wayang_kulit/wayang_2.jpeg",
+                "asset/img/galeri/wayang_kulit/wayang_6.jpeg",
+                "asset/img/galeri/wayang_kulit/wayang_7.jpeg",
+                "asset/img/galeri/wayang_kulit/wayang_8.jpeg",
+                "asset/img/galeri/wayang_kulit/wayang_9.jpeg",
+                "asset/img/galeri/wayang_kulit/wayang_10.jpeg",
+                "asset/img/galeri/wayang_kulit/wayang_11.jpeg",
+                "asset/img/galeri/wayang_kulit/wayang_12.jpeg"
             ]
         },
         {
             id: 'slider-track-ziarah',
             images: [
-                "https://ik.imagekit.io/nunuibnu/ziarah_makam/ziarah_makam_2?updatedAt=1785564950824",
-                "https://ik.imagekit.io/nunuibnu/ziarah_makam/ziarah_makam_1?updatedAt=1785564950829",
-                "https://ik.imagekit.io/nunuibnu/ziarah_makam/ziarah_makam_3?updatedAt=1785564950827"
+                "asset/img/galeri/ziarah_makam/ziarah_makam_2.webp",
+                "asset/img/galeri/ziarah_makam/ziarah_makam_1.webp",
+                "asset/img/galeri/ziarah_makam/ziarah_makam_3.webp"
             ]
         },
         {
             id: 'slider-track-kuda',
             images: [
-                "https://ik.imagekit.io/nunuibnu/kuda_lumping/kuda_lumping_1?updatedAt=1785564937559",
-                "https://ik.imagekit.io/nunuibnu/kuda_lumping/kuda%20lumping%205?updatedAt=1785567933068",
-                "https://ik.imagekit.io/nunuibnu/kuda_lumping/kuda%20lumping%204?updatedAt=1785567909737",
-                "https://ik.imagekit.io/nunuibnu/kuda_lumping/kuda_lumping_3?updatedAt=1785567883795",
-                "https://ik.imagekit.io/nunuibnu/kuda_lumping/kuda_lumping_2?updatedAt=1785567855861"
+                "asset/img/galeri/kuda_lumping/kuda_lumping_1.webp",
+                "asset/img/galeri/kuda_lumping/kuda lumping 5.jpeg",
+                "asset/img/galeri/kuda_lumping/kuda lumping 4.jpeg",
+                "asset/img/galeri/kuda_lumping/kuda_lumping_3.jpeg",
+                "asset/img/galeri/kuda_lumping/kuda_lumping_2.jpeg"
             ]
         },
         {
             id: 'slider-track-pengajian',
             images: [
-                "https://ik.imagekit.io/nunuibnu/pengajian/pengajian_1?updatedAt=1786586749667",
-                "https://ik.imagekit.io/nunuibnu/pengajian/pengajian_2?updatedAt=1786586746832",
-                "https://ik.imagekit.io/nunuibnu/pengajian/pengajian_3?updatedAt=1786586749990",
-                "https://ik.imagekit.io/nunuibnu/pengajian/pengajian_4?updatedAt=1786586746657"
+                "asset/img/galeri/pengajian/pengajian_1.jpeg",
+                "asset/img/galeri/pengajian/pengajian_2.jpeg",
+                "asset/img/galeri/pengajian/pengajian_3.jpeg",
+                "asset/img/galeri/pengajian/pengajian_4.jpeg"
             ]
         }
     ];

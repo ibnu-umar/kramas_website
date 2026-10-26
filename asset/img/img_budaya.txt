@@ -1,8 +1,8 @@
 wayangkulit
-https://ik.imagekit.io/nunuibnu/budaya_lokal/wayangkulit/ki_catur?updatedAt=1785668404439
+asset/img/budaya_lokal/wayangkulit/ki_catur.jpeg
 
 kudalumping
-https://ik.imagekit.io/nunuibnu/budaya_lokal/kudalumping/turonggo?updatedAt=1785668512597
+asset/img/budaya_lokal/kudalumping/turonggo.jpeg
 
 bersih_desa
-https://ik.imagekit.io/nunuibnu/budaya_lokal/bersih_desa/warga?updatedAt=1785668456192
+asset/img/budaya_lokal/bersih_desa/warga.jpeg

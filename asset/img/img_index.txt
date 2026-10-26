@@ -1,4 +1,13 @@
-thumbnail 
+﻿thumbnail 
 
-wayang 15 agustus 2026
-https://ik.imagekit.io/nunuibnu/event/wayang_kulit/15_agustus_2026/thumbnail/thumbnail_15-08-2026.png
+wayang 09 Mei 2026
+asset/img/thumbnail/wayang/9-5-2026.png
+
+kuda lumping 09 Mei 2026
+asset/img/thumbnail/kuda/kuda09mei.png
+
+ziarah 09 Mei 2026
+asset/img/thumbnail/ziarah_makam/ziarah09.png
+
+ketua_lpmk
+asset/img/ketualpmk/supri.jpeg

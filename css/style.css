@@ -40,6 +40,10 @@ h6,
 }
 
 /* Custom Utilities for Tailwind integration */
+.aspect-video {
+    aspect-ratio: 16 / 9;
+}
+
 .bg-earth-dark {
     background-color: var(--color-dark);
 }

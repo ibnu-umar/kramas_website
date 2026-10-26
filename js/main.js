@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const card = document.createElement('div');
                 card.className = 'bg-white rounded-[20px] p-[12px] shadow-md hover:shadow-lg transition-shadow border-t-4 border-earth-gold flex flex-col';
                 card.innerHTML = `
-                    <div class="h-48 overflow-hidden rounded-[8px] img-zoom-container">
+                    <div class="w-full aspect-video overflow-hidden rounded-[8px] img-zoom-container">
                         <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover">
                     </div>
                     <div class="pt-4 pb-2 flex flex-col flex-grow">
